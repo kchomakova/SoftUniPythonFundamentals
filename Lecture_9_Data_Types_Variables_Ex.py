@@ -29,6 +29,7 @@ print(f'Gladiator expenses: {total_expenses:.2f} aureus')
 # cnt_broken_helmet = lost_fights // 2
 # cnt_broken_sword = lost_fights // 3
 # cnt_broken_shield = lost_fights // 6
+# cnt_broken_armor = cnt_broken_shield // 2
 
 # Task 9: Snowballs
 n_snowballs = int(input())

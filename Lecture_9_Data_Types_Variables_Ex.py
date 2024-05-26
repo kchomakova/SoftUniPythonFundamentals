@@ -103,3 +103,62 @@ for i in range(n):
     remaining_capacity -= water_liters
 
 print(CAPACITY_LITRES - remaining_capacity)
+
+# More exercises Task 1: Exchange integers
+first_number = int(input())
+second_number = int(input())
+
+print('Before:')
+print(f'a = {first_number}')
+print(f'b = {second_number}')
+print('After:')
+print(f'a = {second_number}')
+print(f'b = {first_number}')
+
+# More exercises Task 2: Prime Number Checker
+inp_number = int(input())
+
+is_prime = True
+for i in range(2, inp_number):
+    if inp_number % i == 0:
+        is_prime = False
+
+print(is_prime)
+
+# More exercises Task 3: Decrypting Messages
+key = int(input())
+n = int(input())
+
+message = ''
+for i in range(n):
+    letter = input()
+
+    new_letter = chr(ord(letter) + key)
+    message += new_letter
+
+print(message)
+
+# More exercises Task 4: Balanced Brackets
+n = int(input())
+
+brackets = ''
+for _ in range(n):
+    inp = input()
+    if inp == '(' or inp == ')':
+        brackets += inp
+
+if brackets[0] == ')' or brackets[-1] == '(':
+    print('UNBALANCED')
+    exit()
+
+for i in range(1,len(brackets)):
+    if brackets[i] == brackets[i-1]:
+        print('UNBALANCED')
+        exit()
+else:
+    print('BALANCED')
+
+
+
+
+
